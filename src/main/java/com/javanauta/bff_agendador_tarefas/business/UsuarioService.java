@@ -1,5 +1,6 @@
 package com.javanauta.bff_agendador_tarefas.business;
 import com.javanauta.bff_agendador_tarefas.business.dto.in.EnderecoDTORequest;
+import com.javanauta.bff_agendador_tarefas.business.dto.in.LoginDTORequest;
 import com.javanauta.bff_agendador_tarefas.business.dto.in.TelefoneDTORequest;
 import com.javanauta.bff_agendador_tarefas.business.dto.in.UsuarioDTORequest;
 import com.javanauta.bff_agendador_tarefas.business.dto.out.EnderecoDTOResponse;
@@ -31,8 +32,8 @@ public class UsuarioService {
     /// ============================================================
     /// ========================   LOGIN     =======================
     /// ========================   INICIO    =======================
-    public String loginUsuario(UsuarioDTORequest usuarioDTORequest){
-        return usuarioClient.login(usuarioDTORequest);
+    public String loginUsuario(LoginDTORequest dto){
+        return usuarioClient.login(dto);
     }
     ///  =========================   FIM   ==========================
 

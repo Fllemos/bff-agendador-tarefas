@@ -1,6 +1,7 @@
 package com.javanauta.bff_agendador_tarefas.infrascture.client;
 
 import com.javanauta.bff_agendador_tarefas.business.dto.in.EnderecoDTORequest;
+import com.javanauta.bff_agendador_tarefas.business.dto.in.LoginDTORequest;
 import com.javanauta.bff_agendador_tarefas.business.dto.in.TelefoneDTORequest;
 import com.javanauta.bff_agendador_tarefas.business.dto.in.UsuarioDTORequest;
 import com.javanauta.bff_agendador_tarefas.business.dto.out.EnderecoDTOResponse;
@@ -35,7 +36,7 @@ public interface UsuarioClient {
 
     // VALIDAÇÃO VIA TOKE -- PASSANDO USUARIO(EMAIL) E SENHA
     @PostMapping("/login")
-    String login(@RequestBody UsuarioDTORequest usuarioDTORequest);
+    String login(@RequestBody LoginDTORequest usuarioDTORequest);
     ///  =========================   FIM   ==========================
 
 

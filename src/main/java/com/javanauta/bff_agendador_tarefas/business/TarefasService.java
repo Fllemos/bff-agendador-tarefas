@@ -31,8 +31,8 @@ public class TarefasService {
     // =================== LISTA POR PERIODO ======================
     // ============================================================
         public List<TarefasDTOResponse> buscaTarefaPorPeriodo(LocalDateTime dataInicial,
-                                                             LocalDateTime dataFinal,
-                                                             String token) {
+                                                              LocalDateTime dataFinal,
+                                                              String token) {
                return tarefasClient.buscaTarefaPorPeriodo(dataInicial,dataFinal,token);
         }
     // ========================== FIM =============================

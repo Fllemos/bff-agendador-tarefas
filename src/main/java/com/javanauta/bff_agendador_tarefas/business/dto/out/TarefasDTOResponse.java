@@ -1,8 +1,7 @@
 package com.javanauta.bff_agendador_tarefas.business.dto.out;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
-import com.javanauta.bffagendadortarefas.business.enums.StatusNotificacaoEnum;
+import com.javanauta.bff_agendador_tarefas.infrascture.client.enums.StatusNotificacaoEnum;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -25,5 +24,4 @@ public class TarefasDTOResponse {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
     private LocalDateTime dataAlteracao;
     private StatusNotificacaoEnum statusNotificacaoEnum;
-
 }

@@ -2,6 +2,7 @@ package com.javanauta.bff_agendador_tarefas.controller;
 
 import com.javanauta.bff_agendador_tarefas.business.UsuarioService;
 import com.javanauta.bff_agendador_tarefas.business.dto.in.EnderecoDTORequest;
+import com.javanauta.bff_agendador_tarefas.business.dto.in.LoginDTORequest;
 import com.javanauta.bff_agendador_tarefas.business.dto.in.TelefoneDTORequest;
 import com.javanauta.bff_agendador_tarefas.business.dto.in.UsuarioDTORequest;
 import com.javanauta.bff_agendador_tarefas.business.dto.out.EnderecoDTOResponse;
@@ -32,8 +33,8 @@ public class UsuarioController {
     /// ========================   LOGIN     =======================
     /// ========================   INICIO    =======================
     @PostMapping("/login")
-    public String login(@RequestBody UsuarioDTORequest usuarioDTORequest){
-         return usuarioService.loginUsuario(usuarioDTORequest);
+    public String login(@RequestBody LoginDTORequest dto){
+         return usuarioService.loginUsuario(dto);
     }
     ///  =========================   FIM   ==========================
 
